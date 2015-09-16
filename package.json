@@ -1,0 +1,22 @@
+{
+  "name": "cssmodules-spike",
+  "version": "1.0.0",
+  "description": "proof of concept utilizing cssmodules to verify that we can easily update themes (more so than now)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d",
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot --content-base ./ --port 8888"
+  },
+  "author": "Matt Winchester",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "5.8.24",
+    "babel-loader": "5.3.2",
+    "css-loader": "0.18.0",
+    "style-loader": "0.12.3",
+    "webpack": "1.12.1",
+    "webpack-dev-server": "1.11.0"
+  },
+  "dependencies": {}
+}
