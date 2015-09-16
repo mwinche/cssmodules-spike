@@ -1,0 +1,30 @@
+.option{
+
+}
+
+.option--selected{
+  background-color: blue;
+  color: white;
+}
+
+.optionsContainer{
+  display: none;
+}
+
+.optionsContainer--open{
+  display: block;
+}
+
+.button{
+  border: 1px solid black;
+}
+
+.button::after{
+  content: '△';
+  display: inline;
+}
+
+.button--open::after{
+  content: '▽';
+  display: inline;
+}
