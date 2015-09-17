@@ -11,7 +11,20 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-            { test: /\.css$/, loader: 'style-loader!css-loader?modules' },
+            { test: /\.css$/,
+              loaders: [
+                'style-loader',
+                'css-loader?modules',
+                'autoprefixer-loader?{browsers:["last 2 versions", "IE >= 9"]}'
+              ]
+            },
+            {
+              test: /\.less$/, loaders: [
+              'style-loader',
+              'css-loader?modules',
+              'autoprefixer-loader?{browsers:["last 2 versions", "IE >= 9"]}',
+              'less-loader']
+            }
         ]
     }
 };

@@ -1,7 +1,7 @@
 import DropDown from './DropDown/DropDown.js';
 import Button from './Button/Button.js';
 import TextArea from './TextArea/TextArea.js';
-import styles from './styles.css';
+import styles from './styles.less';
 import { AllHtmlEntities as Entities } from 'html-entities';
 
 let entities = new Entities();
@@ -19,8 +19,10 @@ document.body.innerHTML = `
   <div class="${styles['middleAlign']}">
     <div class="${styles['updateStatus']}">
       <wftextarea class="${styles['textArea']}"></wftextarea>
-      <dropdown class="${styles['statusSelection']}" label="Status..." options="${entities.encode(JSON.stringify(options))}"></dropdown>
-      <wfbutton label="Update" class="${styles['commentButton']}"></wfbutton>
+      <div class="${styles['controls']}">
+        <dropdown class="${styles['statusSelection']}" label="Status..." options="${entities.encode(JSON.stringify(options))}"></dropdown>
+        <wfbutton label="Update" class="${styles['commentButton']}"></wfbutton>
+      </div>
     </div>
     <div class="${styles['comments']}">
       <div class="${styles['comment']}">

@@ -1,6 +1,6 @@
 'use strict';
 
-import styles from './DropDown.css';
+import styles from './DropDown.less';
 
 export default class DropDown {
   constructor(element){
@@ -16,10 +16,12 @@ export default class DropDown {
       `
     , '');
 
+    addClass(element, styles['dropdown']);
+
     element.innerHTML = `
-      <div class="${styles['button']}">
+      <span class="${styles['button']}">
         ${this.label}
-      </div>
+      </span>
       <ul class="${styles['optionsContainer']}">
         ${optionsHTML}
       </ul>
