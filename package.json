@@ -8,6 +8,10 @@
     "build": "webpack -d",
     "start": "webpack-dev-server --inline --hot --content-base ./ --port 8888"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mwinche/cssmodules-spike.git"
+  },
   "author": "Matt Winchester",
   "license": "MIT",
   "devDependencies": {
