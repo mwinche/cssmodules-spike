@@ -1,4 +1,4 @@
-@import 'themes/ice/theme.less';
+@import './themes/ice/theme.css';
 
 /* reset */
 html,body{
@@ -8,8 +8,8 @@ html,body{
 }
 
 body{
-  background-color: @primary;
-  font-family: @font;
+  background-color: var(--primary);
+  font-family: var(--font);
   text-align: justify;
 }
 
@@ -26,9 +26,9 @@ body{
   box-sizing: border-box;
   overflow-y: auto;
 
-  background-color: @compliment;
-  border-left: 1px @accent solid;
-  border-right: 1px @accent-light10 solid;
+  background-color: var(--compliment);
+  border-left: 1px var(--accent) solid;
+  border-right: 1px color(var(--accent) whiteness(10%)) solid;
 }
 
 .textArea{
@@ -40,7 +40,7 @@ body{
 
 .comment{
   margin-top: 5px;
-  background-color: @compliment-dark10;
-  color: @text;
+  background-color: color(var(--compliment) blackness(10%));
+  color: var(--text);
   padding: 5px;
 }

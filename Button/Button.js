@@ -1,4 +1,4 @@
-import styles from './Button.less';
+import styles from './Button.css';
 
 export default class Button {
   constructor(element){

@@ -1,0 +1,18 @@
+@import '../themes/ice/theme.css';
+
+.button{
+  font-size: 16px;
+  padding: 0px 15px;
+  font-family: var(--font);
+  background: var(--compliment);
+  border: 1px solid var(--accent);
+  text-align: center;
+  cursor: pointer;
+  color: var(--accent);
+  text-transform: var(--upper);
+  padding-top: 4px;
+}
+
+.button:hover{
+  box-shadow: 1px 1px 0px 0px color(var(--accent) blackness(10%));
+}

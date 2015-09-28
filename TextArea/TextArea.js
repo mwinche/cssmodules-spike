@@ -1,6 +1,6 @@
 'use strict';
 
-import styles from './TextArea.less';
+import styles from './TextArea.css';
 
 export default class TextArea {
   constructor(element){

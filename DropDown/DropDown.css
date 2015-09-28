@@ -1,4 +1,4 @@
-@import '../themes/ice/theme.less';
+@import '../themes/ice/theme.css';
 
 .dropdown{
   display: inline;
@@ -9,21 +9,21 @@
 
 .option{
   padding: 3px;
-  border-bottom: 1px @primary solid;
+  border-bottom: 1px var(--primary) solid;
   cursor: pointer;
 }
 
 .option--selected{
-  background-color: @primary;
-  color: @compliment;
+  background-color: var(--primary);
+  color: --compliment;
 }
 
 .optionsContainer{
   display: none;
-  background-color: @compliment;
-  border: 1px @primary solid;
+  background-color: var(--compliment);
+  border: 1px var(--primary) solid;
   font-size: 16px;
-  box-shadow: 1px 1px 0px 0px @accent;
+  box-shadow: 1px 1px 0px 0px var(--accent);
 }
 
 .optionsContainer--open{
@@ -39,20 +39,20 @@
 
 .button{
   font-size: 16px;
-  border: 1px solid @accent;
+  border: 1px solid var(--accent);
   cursor: pointer;
   display: inline;
-  color: @accent;
-  text-transform: @upper;
-  font-family: @font;
+  color: var(--accent);
+  text-transform: var(--upper);
+  font-family: var(--font);
   padding: 0px 15px;
   white-space: nowrap;
   padding-top: 4px;
-  background-color: @compliment;
+  background-color: var(--compliment);
 }
 
 .button:hover{
-    box-shadow: 1px 1px 0px 0px @accent-dark10;
+  box-shadow: 1px 1px 0px 0px color(var(--accent) blackness(10%));
 }
 
 .button::after{

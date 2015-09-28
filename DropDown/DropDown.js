@@ -1,6 +1,6 @@
 'use strict';
 
-import styles from './DropDown.less';
+import styles from './DropDown.css';
 
 export default class DropDown {
   constructor(element){

@@ -1,7 +1,7 @@
 import DropDown from './DropDown/DropDown.js';
 import Button from './Button/Button.js';
 import TextArea from './TextArea/TextArea.js';
-import styles from './styles.less';
+import styles from './styles.css';
 import { AllHtmlEntities as Entities } from 'html-entities';
 
 let entities = new Entities();

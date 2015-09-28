@@ -1,0 +1,9 @@
+:root{
+  --primary: #D4D4D4;
+  --compliment: #FFFFFF;
+  --accent: #13F2FF;
+  --text: #000000;
+
+  --upper: uppercase;
+  --font: AppleGothic;
+}
